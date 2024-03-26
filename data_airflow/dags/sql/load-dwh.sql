@@ -1,0 +1,41 @@
+-- books table
+DROP TABLE IF EXISTS `{{ BOOK_RECOMMENDATION_WH }}.books`;
+
+CREATE TABLE IF NOT EXISTS
+  `{{ BOOK_RECOMMENDATION_WH }}.books`
+CLUSTER BY
+  `year_of_publication`,
+  `publisher`,
+  `book_author` AS
+SELECT
+  *
+FROM
+  `{{BOOK_RECOMMENDATION_WH_EXT}}.books`;
+
+
+-- users
+DROP TABLE IF EXISTS `{{ BOOK_RECOMMENDATION_WH }}.users`;
+
+CREATE TABLE IF NOT EXISTS
+`{{ BOOK_RECOMMENDATION_WH }}.users`
+CLUSTER BY
+`country`,
+`state`,
+`city` AS
+SELECT
+*
+FROM
+`{{BOOK_RECOMMENDATION_WH_EXT}}.users`;
+
+-- rating
+DROP TABLE IF EXISTS `{{ BOOK_RECOMMENDATION_WH }}.ratings`;
+
+CREATE TABLE IF NOT EXISTS
+`{{ BOOK_RECOMMENDATION_WH }}.ratings`
+CLUSTER BY
+`user_id`,
+`isbn` AS
+SELECT
+*
+FROM
+`{{BOOK_RECOMMENDATION_WH_EXT}}.ratings`;

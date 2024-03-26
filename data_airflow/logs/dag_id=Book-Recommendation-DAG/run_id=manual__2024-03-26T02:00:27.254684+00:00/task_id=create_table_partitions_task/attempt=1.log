@@ -1,0 +1,18 @@
+[2024-03-26T02:00:47.975+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.create_table_partitions_task manual__2024-03-26T02:00:27.254684+00:00 [queued]>
+[2024-03-26T02:00:47.979+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.create_table_partitions_task manual__2024-03-26T02:00:27.254684+00:00 [queued]>
+[2024-03-26T02:00:47.980+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-26T02:00:47.985+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryInsertJobOperator): create_table_partitions_task> on 2024-03-26 02:00:27.254684+00:00
+[2024-03-26T02:00:47.990+0000] {standard_task_runner.py:60} INFO - Started process 3802 to run task
+[2024-03-26T02:00:47.993+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'create_table_partitions_task', 'manual__2024-03-26T02:00:27.254684+00:00', '--job-id', '362', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmp3bkis4r_']
+[2024-03-26T02:00:47.995+0000] {standard_task_runner.py:88} INFO - Job 362: Subtask create_table_partitions_task
+[2024-03-26T02:00:48.032+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.create_table_partitions_task manual__2024-03-26T02:00:27.254684+00:00 [running]> on host 992e1288d09b
+[2024-03-26T02:00:48.074+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='create_table_partitions_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T02:00:27.254684+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T02:00:27.254684+00:00'
+[2024-03-26T02:00:48.076+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-03-26T02:00:48.076+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-26T02:00:48.077+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-03-26T02:00:48.077+0000] {credentials_provider.py:353} INFO - Getting connection using `google.auth.default()` since no explicit credentials are provided.
+[2024-03-26T02:00:48.119+0000] {bigquery.py:2811} INFO - Executing: {'query': {'query': '-- books table\nDROP TABLE IF EXISTS `book_recommendation_analytics.books`;\n\nCREATE TABLE IF NOT EXISTS\n  `book_recommendation_analytics.books`\nCLUSTER BY\n  `year_of_publication`,\n  `publisher`,\n  `book_author` AS\nSELECT\n  *\nFROM\n  `book_recommendataion_wh.books`;\n\n\n-- users\nDROP TABLE IF EXISTS `book_recommendation_analytics.users`;\n\nCREATE TABLE IF NOT EXISTS\n`book_recommendation_analytics.users`\nCLUSTER BY\n`country`,\n`state`,\n`city` AS\nSELECT\n*\nFROM\n`book_recommendataion_wh.users`;', 'useLegacySql': False}}'
+[2024-03-26T02:00:48.121+0000] {bigquery.py:1613} INFO - Inserting job ***_Book_Recommendation_DAG_create_table_partitions_task_2024_03_26T02_00_27_254684_00_00_5258fdc48ed06dfe445cce8c1f26d839
+[2024-03-26T02:00:58.596+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=create_table_partitions_task, execution_date=20240326T020027, start_date=20240326T020047, end_date=20240326T020058
+[2024-03-26T02:00:58.645+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T02:00:58.671+0000] {taskinstance.py:3312} INFO - 2 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,16 @@
+[2024-03-26T01:52:39.210+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.create-external-table-group-tasks.bq_external_books_table_task manual__2024-03-26T01:52:22.039990+00:00 [queued]>
+[2024-03-26T01:52:39.216+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.create-external-table-group-tasks.bq_external_books_table_task manual__2024-03-26T01:52:22.039990+00:00 [queued]>
+[2024-03-26T01:52:39.217+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-26T01:52:39.224+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create-external-table-group-tasks.bq_external_books_table_task> on 2024-03-26 01:52:22.039990+00:00
+[2024-03-26T01:52:39.228+0000] {standard_task_runner.py:60} INFO - Started process 3559 to run task
+[2024-03-26T01:52:39.231+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'create-external-table-group-tasks.bq_external_books_table_task', 'manual__2024-03-26T01:52:22.039990+00:00', '--job-id', '350', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpf7sy4yr8']
+[2024-03-26T01:52:39.233+0000] {standard_task_runner.py:88} INFO - Job 350: Subtask create-external-table-group-tasks.bq_external_books_table_task
+[2024-03-26T01:52:39.266+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.create-external-table-group-tasks.bq_external_books_table_task manual__2024-03-26T01:52:22.039990+00:00 [running]> on host 992e1288d09b
+[2024-03-26T01:52:39.314+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='create-external-table-group-tasks.bq_external_books_table_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T01:52:22.039990+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T01:52:22.039990+00:00'
+[2024-03-26T01:52:39.316+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-03-26T01:52:39.317+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-26T01:52:39.317+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-03-26T01:52:39.318+0000] {credentials_provider.py:353} INFO - Getting connection using `google.auth.default()` since no explicit credentials are provided.
+[2024-03-26T01:52:39.834+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=create-external-table-group-tasks.bq_external_books_table_task, execution_date=20240326T015222, start_date=20240326T015239, end_date=20240326T015239
+[2024-03-26T01:52:39.874+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T01:52:39.897+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,1288 @@
+[2024-03-24T21:59:09.615+0000] {processor.py:161} INFO - Started process (PID=155) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:09.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:09.633+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:09.632+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:09.694+0000] {processor.py:840} INFO - DAG(s) 'Bookstore-project-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:10.114+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:10.113+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:Bookstore-project-dag
+[2024-03-24T21:59:10.122+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:10.121+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:Bookstore-project-dag
+[2024-03-24T21:59:10.126+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:10.126+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:Bookstore-project-dag
+[2024-03-24T21:59:10.127+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:10.127+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T21:59:10.142+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:10.142+0000] {dag.py:3069} INFO - Creating ORM DAG for Bookstore-project-dag
+[2024-03-24T21:59:10.157+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:10.156+0000] {dag.py:3834} INFO - Setting next_dagrun for Bookstore-project-dag to None, run_after=None
+[2024-03-24T21:59:10.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.579 seconds
+[2024-03-24T21:59:11.625+0000] {processor.py:161} INFO - Started process (PID=156) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:11.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:11.629+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:11.629+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:11.644+0000] {processor.py:840} INFO - DAG(s) 'Bookstore-project-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:11.659+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:11.659+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T21:59:11.682+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:11.681+0000] {dag.py:3834} INFO - Setting next_dagrun for Bookstore-project-dag to None, run_after=None
+[2024-03-24T21:59:11.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.080 seconds
+[2024-03-24T21:59:13.686+0000] {processor.py:161} INFO - Started process (PID=157) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:13.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:13.692+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:13.691+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:13.719+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:13.713+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 45, in <module>
+    pulldown_dataset_task.set_downstream(do_clean_to_parquet_task)
+NameError: name 'do_clean_to_parquet_task' is not defined
+[2024-03-24T21:59:13.725+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:13.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.110 seconds
+[2024-03-24T21:59:20.893+0000] {processor.py:161} INFO - Started process (PID=158) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:20.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:20.899+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:20.899+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:20.913+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:20.912+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 45, in <module>
+    pulldown_dataset_task.set_downstream(do_clean_to_parquet_task)
+NameError: name 'do_clean_to_parquet_task' is not defined
+[2024-03-24T21:59:20.913+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:20.960+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.072 seconds
+[2024-03-24T21:59:22.959+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:22.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:22.965+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:22.964+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:22.984+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:22.979+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 45, in <module>
+    pulldown_dataset_task.set_downstream(do_clean_to_parquet_task)
+NameError: name 'do_clean_to_parquet_task' is not defined
+[2024-03-24T21:59:22.985+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:23.015+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.067 seconds
+[2024-03-24T21:59:26.099+0000] {processor.py:161} INFO - Started process (PID=160) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:26.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:26.106+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:26.106+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:26.121+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:26.119+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 46, in <module>
+    create_table_partition_task.set_downstream(uninstall_pip_packge_task)
+NameError: name 'create_table_partition_task' is not defined
+[2024-03-24T21:59:26.121+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:26.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.055 seconds
+[2024-03-24T21:59:32.187+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:32.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:32.195+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:32.194+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:32.218+0000] {processor.py:840} INFO - DAG(s) 'Bookstore-project-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:32.236+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:32.236+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T21:59:32.263+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:32.263+0000] {dag.py:3834} INFO - Setting next_dagrun for Bookstore-project-dag to None, run_after=None
+[2024-03-24T21:59:32.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.103 seconds
+[2024-03-24T21:59:34.237+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:34.238+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:34.240+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:34.240+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:34.252+0000] {processor.py:840} INFO - DAG(s) 'Bookstore-project-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:34.264+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:34.264+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T21:59:34.281+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:34.281+0000] {dag.py:3834} INFO - Setting next_dagrun for Bookstore-project-dag to None, run_after=None
+[2024-03-24T21:59:34.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.064 seconds
+[2024-03-24T21:59:37.360+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:37.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:37.365+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:37.365+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:37.411+0000] {processor.py:840} INFO - DAG(s) 'Bookstore-project-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:37.427+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:37.427+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T21:59:37.450+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:37.449+0000] {dag.py:3834} INFO - Setting next_dagrun for Bookstore-project-dag to None, run_after=None
+[2024-03-24T21:59:37.465+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.110 seconds
+[2024-03-24T21:59:54.777+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:54.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T21:59:54.784+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:54.783+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:54.831+0000] {processor.py:840} INFO - DAG(s) 'Books-project-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T21:59:54.957+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:54.957+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:Books-project-dag
+[2024-03-24T21:59:54.963+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:54.963+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:Books-project-dag
+[2024-03-24T21:59:54.966+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:54.966+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:Books-project-dag
+[2024-03-24T21:59:54.967+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:54.967+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T21:59:54.976+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:54.976+0000] {dag.py:3069} INFO - Creating ORM DAG for Books-project-dag
+[2024-03-24T21:59:54.987+0000] {logging_mixin.py:188} INFO - [2024-03-24T21:59:54.987+0000] {dag.py:3834} INFO - Setting next_dagrun for Books-project-dag to None, run_after=None
+[2024-03-24T21:59:55.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.244 seconds
+[2024-03-24T22:00:06.912+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:06.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:00:06.918+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:06.917+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:06.941+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-project-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:07.047+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:07.047+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:Book-Recommendation-project-dag
+[2024-03-24T22:00:07.053+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:07.053+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:Book-Recommendation-project-dag
+[2024-03-24T22:00:07.057+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:07.056+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:Book-Recommendation-project-dag
+[2024-03-24T22:00:07.057+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:07.057+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:00:07.075+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:07.074+0000] {dag.py:3069} INFO - Creating ORM DAG for Book-Recommendation-project-dag
+[2024-03-24T22:00:07.088+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:07.087+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-project-dag to None, run_after=None
+[2024-03-24T22:00:07.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.196 seconds
+[2024-03-24T22:00:08.939+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:08.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:00:08.943+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:08.943+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:08.959+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:09.026+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.026+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:Book-Recommendation-dag
+[2024-03-24T22:00:09.031+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.031+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:Book-Recommendation-dag
+[2024-03-24T22:00:09.035+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.034+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:Book-Recommendation-dag
+[2024-03-24T22:00:09.035+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.035+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:00:09.042+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.042+0000] {dag.py:3069} INFO - Creating ORM DAG for Book-Recommendation-dag
+[2024-03-24T22:00:09.047+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.047+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-dag to None, run_after=None
+[2024-03-24T22:00:09.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.121 seconds
+[2024-03-24T22:00:09.961+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:09.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:00:09.963+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.963+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:09.973+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:09.986+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:09.985+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:00:10.000+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:10.000+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-dag to None, run_after=None
+[2024-03-24T22:00:10.014+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.056 seconds
+[2024-03-24T22:00:24.195+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:24.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:00:24.200+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:24.200+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:24.224+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:24.268+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:24.267+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:00:24.304+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:24.304+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-dag to None, run_after=None
+[2024-03-24T22:00:24.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.131 seconds
+[2024-03-24T22:00:25.215+0000] {processor.py:161} INFO - Started process (PID=181) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:25.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:00:25.220+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:25.219+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:25.237+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:25.249+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:25.249+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:00:25.265+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:25.264+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-dag to None, run_after=None
+[2024-03-24T22:00:25.279+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.071 seconds
+[2024-03-24T22:00:55.728+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:55.730+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:00:55.737+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:55.736+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:55.763+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-dag' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:00:55.929+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:55.929+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:00:55.939+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:55.939+0000] {dag.py:3069} INFO - Creating ORM DAG for Book-Recommendation-dag
+[2024-03-24T22:00:55.951+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:00:55.951+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-dag to None, run_after=None
+[2024-03-24T22:00:55.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.249 seconds
+[2024-03-24T22:01:17.048+0000] {processor.py:161} INFO - Started process (PID=196) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:17.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:01:17.060+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:17.059+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:17.109+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:17.260+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:17.259+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:Book-Recommendation-DAG
+[2024-03-24T22:01:17.266+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:17.266+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:Book-Recommendation-DAG
+[2024-03-24T22:01:17.269+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:17.269+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:Book-Recommendation-DAG
+[2024-03-24T22:01:17.270+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:17.270+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:01:17.279+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:17.279+0000] {dag.py:3069} INFO - Creating ORM DAG for Book-Recommendation-DAG
+[2024-03-24T22:01:17.288+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:17.288+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:01:17.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.264 seconds
+[2024-03-24T22:01:30.431+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:30.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:01:30.437+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:30.436+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:30.457+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:30.568+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:30.567+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:01:30.576+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:30.575+0000] {dag.py:3069} INFO - Creating ORM DAG for Book-Recommendation-DAG
+[2024-03-24T22:01:30.583+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:30.582+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:01:30.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.172 seconds
+[2024-03-24T22:01:53.824+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:53.829+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:01:53.912+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:53.911+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:53.934+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:01:53.950+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:53.950+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:01:53.972+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:01:53.972+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:01:53.987+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.172 seconds
+[2024-03-24T22:02:24.257+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:02:24.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:02:24.273+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:02:24.272+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:02:24.294+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:02:24.426+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:02:24.426+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:02:24.441+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:02:24.441+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:02:24.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.220 seconds
+[2024-03-24T22:02:54.743+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:02:54.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:02:54.753+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:02:54.752+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:02:54.776+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:02:54.808+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:02:54.808+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:02:54.829+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:02:54.828+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:02:54.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.114 seconds
+[2024-03-24T22:03:01.971+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:01.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:03:01.976+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:01.976+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:01.990+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:02.080+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:02.079+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:03:02.095+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:02.094+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:03:02.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.141 seconds
+[2024-03-24T22:03:05.012+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:05.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:03:05.015+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:05.014+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:05.024+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:05.034+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:05.034+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:03:05.048+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:05.047+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:03:05.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.050 seconds
+[2024-03-24T22:03:06.056+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:06.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:03:06.061+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:06.061+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:06.083+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:06.099+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:06.098+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:03:06.116+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:06.116+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:03:06.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.079 seconds
+[2024-03-24T22:03:08.113+0000] {processor.py:161} INFO - Started process (PID=232) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:08.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:03:08.116+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:08.115+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:08.125+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:08.135+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:08.135+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:03:08.149+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:08.149+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:03:08.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.052 seconds
+[2024-03-24T22:03:11.242+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:11.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:03:11.245+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:11.245+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:11.256+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:11.268+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:11.267+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:03:11.283+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:11.283+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:03:11.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.056 seconds
+[2024-03-24T22:03:41.637+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:41.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:03:41.643+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:41.643+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:41.663+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:03:41.758+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:41.757+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:03:41.782+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:03:41.782+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:03:41.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.167 seconds
+[2024-03-24T22:04:12.229+0000] {processor.py:161} INFO - Started process (PID=251) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:04:12.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:04:12.238+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:04:12.237+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:04:12.266+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:04:12.295+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:04:12.294+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:04:12.312+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:04:12.312+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:04:12.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.102 seconds
+[2024-03-24T22:04:42.698+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:04:42.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:04:42.705+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:04:42.704+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:04:42.724+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:04:42.754+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:04:42.753+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:04:42.773+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:04:42.773+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:04:42.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.104 seconds
+[2024-03-24T22:05:13.228+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:05:13.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:05:13.233+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:05:13.233+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:05:13.252+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:05:13.282+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:05:13.282+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:05:13.299+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:05:13.298+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:05:13.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.090 seconds
+[2024-03-24T22:05:43.696+0000] {processor.py:161} INFO - Started process (PID=272) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:05:43.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:05:43.702+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:05:43.701+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:05:43.719+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:05:43.749+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:05:43.749+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:05:43.766+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:05:43.766+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:05:43.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.088 seconds
+[2024-03-24T22:06:14.271+0000] {processor.py:161} INFO - Started process (PID=279) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:06:14.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:06:14.277+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:06:14.277+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:06:14.293+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:06:14.325+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:06:14.325+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:06:14.346+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:06:14.346+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:06:14.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.094 seconds
+[2024-03-24T22:06:44.783+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:06:44.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:06:44.794+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:06:44.794+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:06:44.816+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:06:44.851+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:06:44.850+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:06:44.868+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:06:44.868+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:06:44.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.105 seconds
+[2024-03-24T22:07:15.375+0000] {processor.py:161} INFO - Started process (PID=293) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:07:15.381+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:07:15.385+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:07:15.385+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:07:15.402+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:07:15.434+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:07:15.434+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:07:15.470+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:07:15.470+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:07:15.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.119 seconds
+[2024-03-24T22:07:45.766+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:07:45.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:07:45.772+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:07:45.771+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:07:45.789+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:07:45.817+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:07:45.817+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:07:45.833+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:07:45.833+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:07:45.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.086 seconds
+[2024-03-24T22:08:16.157+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:08:16.159+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:08:16.161+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:08:16.161+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:08:16.175+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:08:16.200+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:08:16.200+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:08:16.214+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:08:16.214+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:08:16.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.073 seconds
+[2024-03-24T22:08:46.638+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:08:46.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:08:46.645+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:08:46.644+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:08:46.663+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:08:46.695+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:08:46.695+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:08:46.713+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:08:46.712+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:08:46.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.092 seconds
+[2024-03-24T22:09:17.134+0000] {processor.py:161} INFO - Started process (PID=321) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:09:17.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:09:17.141+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:09:17.141+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:09:17.157+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:09:17.187+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:09:17.187+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:09:17.220+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:09:17.219+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:09:17.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.108 seconds
+[2024-03-24T22:09:47.656+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:09:47.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:09:47.661+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:09:47.661+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:09:47.676+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:09:47.701+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:09:47.701+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:09:47.716+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:09:47.716+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:09:47.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.076 seconds
+[2024-03-24T22:10:18.148+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:10:18.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:10:18.158+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:10:18.158+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:10:18.184+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:10:18.214+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:10:18.214+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:10:18.227+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:10:18.227+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:10:18.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.098 seconds
+[2024-03-24T22:10:48.669+0000] {processor.py:161} INFO - Started process (PID=341) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:10:48.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:10:48.677+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:10:48.676+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:10:48.693+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:10:48.721+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:10:48.721+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:10:48.745+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:10:48.745+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:10:48.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.099 seconds
+[2024-03-24T22:11:19.143+0000] {processor.py:161} INFO - Started process (PID=348) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:11:19.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:11:19.149+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:11:19.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:11:19.163+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:11:19.186+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:11:19.186+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:11:19.199+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:11:19.199+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:11:19.209+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.071 seconds
+[2024-03-24T22:11:49.505+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:11:49.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:11:49.513+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:11:49.512+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:11:49.537+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:11:49.571+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:11:49.571+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:11:49.586+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:11:49.585+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:11:49.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.101 seconds
+[2024-03-24T22:12:19.947+0000] {processor.py:161} INFO - Started process (PID=361) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:12:19.951+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:12:19.954+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:12:19.954+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:12:19.972+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:12:19.997+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:12:19.997+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:12:20.009+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:12:20.009+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:12:20.019+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.078 seconds
+[2024-03-24T22:12:50.465+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:12:50.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:12:50.473+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:12:50.471+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:12:50.504+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:12:50.531+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:12:50.531+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:12:50.546+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:12:50.546+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:12:50.558+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.100 seconds
+[2024-03-24T22:13:20.978+0000] {processor.py:161} INFO - Started process (PID=375) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:13:20.981+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:13:20.987+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:13:20.986+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:13:21.014+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:13:21.043+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:13:21.043+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:13:21.057+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:13:21.057+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:13:21.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.101 seconds
+[2024-03-24T22:13:51.548+0000] {processor.py:161} INFO - Started process (PID=382) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:13:51.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:13:51.559+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:13:51.558+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:13:51.586+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:13:51.622+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:13:51.622+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:13:51.638+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:13:51.638+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:13:51.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.110 seconds
+[2024-03-24T22:14:22.160+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:14:22.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:14:22.167+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:14:22.166+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:14:22.183+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:14:22.205+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:14:22.205+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:14:22.219+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:14:22.218+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:14:22.229+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.074 seconds
+[2024-03-24T22:14:52.636+0000] {processor.py:161} INFO - Started process (PID=396) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:14:52.637+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:14:52.640+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:14:52.640+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:14:52.654+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:14:52.682+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:14:52.682+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:14:52.696+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:14:52.696+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:14:52.706+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.074 seconds
+[2024-03-24T22:15:23.151+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:15:23.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:15:23.157+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:15:23.156+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:15:23.173+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:15:23.201+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:15:23.201+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:15:23.218+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:15:23.218+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:15:23.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.082 seconds
+[2024-03-24T22:15:53.631+0000] {processor.py:161} INFO - Started process (PID=410) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:15:53.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:15:53.638+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:15:53.637+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:15:53.657+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:15:53.701+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:15:53.700+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:15:53.719+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:15:53.719+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:15:53.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.108 seconds
+[2024-03-24T22:16:24.248+0000] {processor.py:161} INFO - Started process (PID=417) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:16:24.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:16:24.256+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:16:24.256+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:16:24.275+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:16:24.311+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:16:24.311+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:16:24.335+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:16:24.334+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:16:24.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.108 seconds
+[2024-03-24T22:16:54.785+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:16:54.790+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:16:54.797+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:16:54.796+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:16:54.827+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:16:54.889+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:16:54.889+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:16:54.908+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:16:54.907+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:16:54.919+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.145 seconds
+[2024-03-24T22:17:25.328+0000] {processor.py:161} INFO - Started process (PID=431) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:17:25.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:17:25.334+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:17:25.334+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:17:25.359+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:17:25.389+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:17:25.389+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:17:25.409+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:17:25.409+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:17:25.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.098 seconds
+[2024-03-24T22:17:55.878+0000] {processor.py:161} INFO - Started process (PID=438) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:17:55.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:17:55.885+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:17:55.884+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:17:55.904+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:17:55.932+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:17:55.932+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:17:55.948+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:17:55.948+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:17:55.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.088 seconds
+[2024-03-24T22:18:26.547+0000] {processor.py:161} INFO - Started process (PID=445) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:18:26.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:18:26.552+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:18:26.552+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:18:26.569+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:18:26.602+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:18:26.602+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:18:26.620+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:18:26.620+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:18:26.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.090 seconds
+[2024-03-24T22:18:57.144+0000] {processor.py:161} INFO - Started process (PID=452) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:18:57.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:18:57.155+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:18:57.154+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:18:57.173+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:18:57.203+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:18:57.202+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:18:57.219+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:18:57.219+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:18:57.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.099 seconds
+[2024-03-24T22:35:28.895+0000] {processor.py:161} INFO - Started process (PID=459) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:35:28.897+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:35:28.901+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:35:28.901+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:35:28.923+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:35:28.959+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:35:28.959+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:35:28.989+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:35:28.989+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:35:29.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.141 seconds
+[2024-03-24T22:35:59.443+0000] {processor.py:161} INFO - Started process (PID=466) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:35:59.446+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:35:59.450+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:35:59.450+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:35:59.472+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:35:59.514+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:35:59.514+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:35:59.537+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:35:59.537+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:35:59.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.123 seconds
+[2024-03-24T22:36:29.990+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:36:29.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:36:29.999+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:36:29.998+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:36:30.031+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:36:30.067+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:36:30.067+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:36:30.084+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:36:30.083+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:36:30.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.114 seconds
+[2024-03-24T22:37:00.661+0000] {processor.py:161} INFO - Started process (PID=480) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:37:00.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:37:00.668+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:37:00.667+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:37:00.689+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:37:00.729+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:37:00.728+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:37:00.749+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:37:00.749+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:37:00.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.110 seconds
+[2024-03-24T22:37:31.099+0000] {processor.py:161} INFO - Started process (PID=487) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:37:31.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:37:31.106+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:37:31.104+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:37:31.139+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:37:31.167+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:37:31.167+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:37:31.183+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:37:31.183+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:37:31.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.099 seconds
+[2024-03-24T22:54:45.059+0000] {processor.py:161} INFO - Started process (PID=494) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:54:45.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:54:45.063+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:54:45.063+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:54:45.084+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:54:45.114+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:54:45.114+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:54:45.131+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:54:45.131+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:54:45.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.095 seconds
+[2024-03-24T22:55:15.570+0000] {processor.py:161} INFO - Started process (PID=501) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:55:15.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:55:15.578+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:55:15.578+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:55:15.593+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:55:15.619+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:55:15.619+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:55:15.635+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:55:15.635+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:55:15.646+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.086 seconds
+[2024-03-24T22:55:46.101+0000] {processor.py:161} INFO - Started process (PID=508) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:55:46.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:55:46.109+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:55:46.109+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:55:46.135+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:55:46.169+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:55:46.169+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:55:46.184+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:55:46.183+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:55:46.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.103 seconds
+[2024-03-24T22:56:16.591+0000] {processor.py:161} INFO - Started process (PID=515) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:56:16.593+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T22:56:16.598+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:56:16.598+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:56:16.626+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T22:56:16.650+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:56:16.650+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T22:56:16.665+0000] {logging_mixin.py:188} INFO - [2024-03-24T22:56:16.665+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T22:56:16.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.094 seconds
+[2024-03-24T23:12:47.592+0000] {processor.py:161} INFO - Started process (PID=522) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:12:47.596+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:12:47.602+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:12:47.601+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:12:47.630+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:12:47.692+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:12:47.692+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:12:47.737+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:12:47.737+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:12:47.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.193 seconds
+[2024-03-24T23:13:18.140+0000] {processor.py:161} INFO - Started process (PID=529) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:13:18.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:13:18.147+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:13:18.147+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:13:18.172+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:13:18.211+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:13:18.210+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:13:18.232+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:13:18.232+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:13:18.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.112 seconds
+[2024-03-24T23:13:48.705+0000] {processor.py:161} INFO - Started process (PID=536) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:13:48.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:13:48.714+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:13:48.713+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:13:48.761+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:13:48.796+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:13:48.796+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:13:48.815+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:13:48.815+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:13:48.828+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.137 seconds
+[2024-03-24T23:14:19.246+0000] {processor.py:161} INFO - Started process (PID=543) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:14:19.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:14:19.253+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:14:19.253+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:14:19.271+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:14:19.301+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:14:19.300+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:14:19.317+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:14:19.317+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:14:19.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.089 seconds
+[2024-03-24T23:14:49.828+0000] {processor.py:161} INFO - Started process (PID=550) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:14:49.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:14:49.839+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:14:49.838+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:14:49.872+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:14:49.917+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:14:49.917+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:14:49.936+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:14:49.936+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:14:49.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.161 seconds
+[2024-03-24T23:15:20.407+0000] {processor.py:161} INFO - Started process (PID=557) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:15:20.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:15:20.413+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:15:20.413+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:15:20.433+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:15:20.465+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:15:20.465+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:15:20.480+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:15:20.480+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:15:20.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.094 seconds
+[2024-03-24T23:15:50.945+0000] {processor.py:161} INFO - Started process (PID=564) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:15:50.949+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:15:50.953+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:15:50.952+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:15:50.973+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:15:50.998+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:15:50.997+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:15:51.013+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:15:51.013+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:15:51.024+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.085 seconds
+[2024-03-24T23:16:21.397+0000] {processor.py:161} INFO - Started process (PID=571) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:16:21.399+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:16:21.402+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:16:21.402+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:16:21.415+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:16:21.439+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:16:21.439+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:16:21.454+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:16:21.454+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:16:21.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.070 seconds
+[2024-03-24T23:16:51.888+0000] {processor.py:161} INFO - Started process (PID=578) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:16:51.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:16:51.897+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:16:51.896+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:16:51.923+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:16:51.954+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:16:51.954+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:16:51.969+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:16:51.969+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:16:51.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.102 seconds
+[2024-03-24T23:17:22.410+0000] {processor.py:161} INFO - Started process (PID=585) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:17:22.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:17:22.418+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:17:22.418+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:17:22.439+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:17:22.470+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:17:22.470+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:17:22.486+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:17:22.486+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:17:22.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.093 seconds
+[2024-03-24T23:17:53.014+0000] {processor.py:161} INFO - Started process (PID=592) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:17:53.016+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:17:53.021+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:17:53.020+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:17:53.038+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:17:53.064+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:17:53.064+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:17:53.080+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:17:53.080+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:17:53.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.085 seconds
+[2024-03-24T23:18:23.601+0000] {processor.py:161} INFO - Started process (PID=599) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:18:23.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:18:23.608+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:18:23.608+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:18:23.629+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:18:23.666+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:18:23.665+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:18:23.684+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:18:23.684+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:18:23.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.103 seconds
+[2024-03-24T23:18:54.143+0000] {processor.py:161} INFO - Started process (PID=606) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:18:54.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:18:54.153+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:18:54.152+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:18:54.188+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:18:54.228+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:18:54.228+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:18:54.245+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:18:54.245+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:18:54.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.127 seconds
+[2024-03-24T23:19:24.724+0000] {processor.py:161} INFO - Started process (PID=613) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:19:24.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:19:24.734+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:19:24.733+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:19:24.761+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:19:24.798+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:19:24.798+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:19:24.820+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:19:24.820+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:19:24.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.135 seconds
+[2024-03-24T23:19:55.345+0000] {processor.py:161} INFO - Started process (PID=620) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:19:55.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:19:55.353+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:19:55.353+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:19:55.370+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:19:55.415+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:19:55.414+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:19:55.431+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:19:55.431+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:19:55.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.107 seconds
+[2024-03-24T23:20:25.918+0000] {processor.py:161} INFO - Started process (PID=627) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:20:25.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:20:25.925+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:20:25.924+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:20:25.942+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:20:25.971+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:20:25.971+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:20:25.987+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:20:25.987+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:20:25.998+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.088 seconds
+[2024-03-24T23:20:56.440+0000] {processor.py:161} INFO - Started process (PID=634) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:20:56.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:20:56.445+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:20:56.445+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:20:56.463+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:20:56.488+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:20:56.488+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:20:56.503+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:20:56.502+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:20:56.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.079 seconds
+[2024-03-24T23:21:26.979+0000] {processor.py:161} INFO - Started process (PID=641) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:21:26.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:21:26.989+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:21:26.988+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:21:27.007+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:21:27.039+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:21:27.039+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:21:27.057+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:21:27.057+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:21:27.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.103 seconds
+[2024-03-24T23:21:57.511+0000] {processor.py:161} INFO - Started process (PID=648) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:21:57.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:21:57.522+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:21:57.521+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:21:57.549+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:21:57.578+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:21:57.577+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:21:57.595+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:21:57.595+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:21:57.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.106 seconds
+[2024-03-24T23:22:28.086+0000] {processor.py:161} INFO - Started process (PID=655) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:22:28.089+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:22:28.093+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:22:28.093+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:22:28.121+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:22:28.162+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:22:28.162+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:22:28.178+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:22:28.178+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:22:28.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.113 seconds
+[2024-03-24T23:22:58.653+0000] {processor.py:161} INFO - Started process (PID=662) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:22:58.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:22:58.660+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:22:58.659+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:22:58.676+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:22:58.703+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:22:58.703+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:22:58.719+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:22:58.719+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:22:58.730+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.083 seconds
+[2024-03-24T23:23:29.186+0000] {processor.py:161} INFO - Started process (PID=669) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:23:29.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:23:29.194+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:23:29.194+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:23:29.216+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:23:29.256+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:23:29.256+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:23:29.273+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:23:29.273+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:23:29.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.115 seconds
+[2024-03-24T23:23:59.638+0000] {processor.py:161} INFO - Started process (PID=676) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:23:59.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:23:59.647+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:23:59.646+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:23:59.665+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:23:59.709+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:23:59.709+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:23:59.729+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:23:59.729+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:23:59.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.115 seconds
+[2024-03-24T23:24:30.242+0000] {processor.py:161} INFO - Started process (PID=683) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:24:30.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:24:30.248+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:24:30.248+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:24:30.267+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:24:30.294+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:24:30.294+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:24:30.308+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:24:30.308+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:24:30.318+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.083 seconds
+[2024-03-24T23:25:00.936+0000] {processor.py:161} INFO - Started process (PID=690) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:25:00.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:25:00.941+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:25:00.941+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:25:00.958+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:25:00.988+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:25:00.988+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:25:01.004+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:25:01.003+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:25:01.014+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.084 seconds
+[2024-03-24T23:25:31.478+0000] {processor.py:161} INFO - Started process (PID=697) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:25:31.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:25:31.484+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:25:31.484+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:25:31.501+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:25:31.530+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:25:31.529+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:25:31.545+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:25:31.545+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:25:31.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.085 seconds
+[2024-03-24T23:26:02.007+0000] {processor.py:161} INFO - Started process (PID=704) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:26:02.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:26:02.013+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:26:02.013+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:26:02.037+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:26:02.071+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:26:02.071+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:26:02.088+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:26:02.088+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:26:02.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.098 seconds
+[2024-03-24T23:26:32.530+0000] {processor.py:161} INFO - Started process (PID=711) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:26:32.533+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:26:32.539+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:26:32.538+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:26:32.568+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:26:32.607+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:26:32.607+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:26:32.623+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:26:32.622+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:26:32.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.115 seconds
+[2024-03-24T23:27:03.061+0000] {processor.py:161} INFO - Started process (PID=718) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:27:03.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:27:03.066+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:27:03.065+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:27:03.083+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:27:03.107+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:27:03.107+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:27:03.121+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:27:03.121+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:27:03.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.081 seconds
+[2024-03-24T23:27:33.545+0000] {processor.py:161} INFO - Started process (PID=725) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:27:33.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:27:33.555+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:27:33.554+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:27:33.581+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:27:33.610+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:27:33.610+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:27:33.625+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:27:33.625+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:27:33.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.099 seconds
+[2024-03-24T23:28:04.075+0000] {processor.py:161} INFO - Started process (PID=732) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:28:04.076+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:28:04.078+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:28:04.078+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:28:04.089+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:28:04.111+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:28:04.111+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:28:04.125+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:28:04.125+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:28:04.135+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.063 seconds
+[2024-03-24T23:28:34.585+0000] {processor.py:161} INFO - Started process (PID=739) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:28:34.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:28:34.590+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:28:34.590+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:28:34.606+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:28:34.633+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:28:34.632+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:28:34.654+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:28:34.654+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:28:34.664+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.084 seconds
+[2024-03-24T23:29:05.036+0000] {processor.py:161} INFO - Started process (PID=746) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:29:05.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:29:05.040+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:29:05.040+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:29:05.051+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:29:05.073+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:29:05.073+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:29:05.089+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:29:05.089+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:29:05.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.070 seconds
+[2024-03-24T23:29:35.496+0000] {processor.py:161} INFO - Started process (PID=753) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:29:35.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:29:35.502+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:29:35.502+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:29:35.520+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:29:35.554+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:29:35.554+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:29:35.574+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:29:35.574+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:29:35.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.098 seconds
+[2024-03-24T23:30:06.016+0000] {processor.py:161} INFO - Started process (PID=760) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:30:06.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:30:06.025+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:30:06.024+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:30:06.059+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:30:06.101+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:30:06.101+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:30:06.129+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:30:06.129+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:30:06.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.134 seconds
+[2024-03-24T23:30:36.543+0000] {processor.py:161} INFO - Started process (PID=767) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:30:36.548+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:30:36.554+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:30:36.554+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:30:36.593+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:30:36.637+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:30:36.637+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:30:36.658+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:30:36.657+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:30:36.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.140 seconds
+[2024-03-24T23:31:07.093+0000] {processor.py:161} INFO - Started process (PID=774) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:31:07.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:31:07.101+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:31:07.100+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:31:07.125+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:31:07.159+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:31:07.159+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:31:07.179+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:31:07.179+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:31:07.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.105 seconds
+[2024-03-24T23:31:37.679+0000] {processor.py:161} INFO - Started process (PID=781) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:31:37.682+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:31:37.686+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:31:37.686+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:31:37.708+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:31:37.744+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:31:37.743+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:31:37.763+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:31:37.763+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:31:37.775+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.102 seconds
+[2024-03-24T23:32:08.310+0000] {processor.py:161} INFO - Started process (PID=788) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:32:08.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:32:08.321+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:32:08.320+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:32:08.358+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:32:08.401+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:32:08.400+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:32:08.419+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:32:08.419+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:32:08.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.133 seconds
+[2024-03-24T23:32:38.895+0000] {processor.py:161} INFO - Started process (PID=795) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:32:38.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:32:38.900+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:32:38.899+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:32:38.927+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:32:38.993+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:32:38.993+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:32:39.013+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:32:39.013+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:32:39.026+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.138 seconds
+[2024-03-24T23:33:09.449+0000] {processor.py:161} INFO - Started process (PID=808) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:33:09.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:33:09.461+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:33:09.460+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:33:09.489+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:33:09.525+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:33:09.525+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:33:09.546+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:33:09.546+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:33:09.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.124 seconds
+[2024-03-24T23:33:40.042+0000] {processor.py:161} INFO - Started process (PID=815) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:33:40.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:33:40.053+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:33:40.052+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:33:40.075+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:33:40.109+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:33:40.109+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:33:40.128+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:33:40.128+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:33:40.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.113 seconds
+[2024-03-24T23:34:10.472+0000] {processor.py:161} INFO - Started process (PID=822) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:34:10.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:34:10.478+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:34:10.477+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:34:10.509+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:34:10.560+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:34:10.559+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:34:10.582+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:34:10.582+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:34:10.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.129 seconds
+[2024-03-24T23:34:41.007+0000] {processor.py:161} INFO - Started process (PID=829) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:34:41.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:34:41.018+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:34:41.017+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:34:41.051+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:34:41.090+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:34:41.090+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:34:41.109+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:34:41.109+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:34:41.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.128 seconds
+[2024-03-24T23:35:11.557+0000] {processor.py:161} INFO - Started process (PID=836) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:35:11.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:35:11.569+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:35:11.568+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:35:11.598+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:35:11.638+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:35:11.638+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:35:11.655+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:35:11.654+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:35:11.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.118 seconds
+[2024-03-24T23:35:42.117+0000] {processor.py:161} INFO - Started process (PID=843) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:35:42.120+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:35:42.127+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:35:42.127+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:35:42.167+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:35:42.204+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:35:42.203+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:35:42.226+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:35:42.226+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:35:42.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.136 seconds
+[2024-03-24T23:36:12.706+0000] {processor.py:161} INFO - Started process (PID=850) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:36:12.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:36:12.719+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:36:12.718+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:36:12.763+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:36:12.815+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:36:12.815+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:36:12.836+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:36:12.836+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:36:12.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.157 seconds
+[2024-03-24T23:36:43.190+0000] {processor.py:161} INFO - Started process (PID=857) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:36:43.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:36:43.195+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:36:43.195+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:36:43.212+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:36:43.244+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:36:43.243+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:36:43.261+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:36:43.261+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:36:43.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.090 seconds
+[2024-03-24T23:37:13.725+0000] {processor.py:161} INFO - Started process (PID=864) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:37:13.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:37:13.729+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:37:13.729+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:37:13.739+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:37:13.759+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:37:13.759+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:37:13.770+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:37:13.770+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:37:13.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.061 seconds
+[2024-03-24T23:37:44.268+0000] {processor.py:161} INFO - Started process (PID=871) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:37:44.271+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:37:44.277+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:37:44.276+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:37:44.309+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:37:44.348+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:37:44.348+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:37:44.364+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:37:44.364+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:37:44.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.117 seconds
+[2024-03-24T23:38:14.866+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:38:14.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:38:14.871+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:38:14.871+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:38:14.885+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:38:14.911+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:38:14.911+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:38:14.924+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:38:14.924+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:38:14.938+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.077 seconds
+[2024-03-24T23:38:45.426+0000] {processor.py:161} INFO - Started process (PID=885) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:38:45.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:38:45.432+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:38:45.431+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:38:45.448+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:38:45.475+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:38:45.475+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:38:45.493+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:38:45.493+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:38:45.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.085 seconds
+[2024-03-24T23:39:15.869+0000] {processor.py:161} INFO - Started process (PID=892) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:39:15.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:39:15.875+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:39:15.875+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:39:15.889+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:39:15.911+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:39:15.911+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:39:15.926+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:39:15.926+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:39:15.936+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.072 seconds
+[2024-03-24T23:39:46.355+0000] {processor.py:161} INFO - Started process (PID=899) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:39:46.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:39:46.363+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:39:46.362+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:39:46.394+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:39:46.440+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:39:46.439+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:39:46.461+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:39:46.461+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:39:46.474+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.126 seconds
+[2024-03-24T23:40:16.935+0000] {processor.py:161} INFO - Started process (PID=906) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:40:16.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:40:16.943+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:40:16.942+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:40:16.961+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:40:16.994+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:40:16.994+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:40:17.012+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:40:17.012+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:40:17.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.106 seconds
+[2024-03-24T23:40:47.457+0000] {processor.py:161} INFO - Started process (PID=912) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:40:47.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:40:47.463+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:40:47.463+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:40:47.482+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:40:47.512+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:40:47.512+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:40:47.528+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:40:47.528+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:40:47.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.088 seconds
+[2024-03-24T23:41:17.937+0000] {processor.py:161} INFO - Started process (PID=919) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:41:17.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:41:17.943+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:41:17.942+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:41:17.956+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:41:17.981+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:41:17.981+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:41:17.996+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:41:17.996+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:41:18.008+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.077 seconds
+[2024-03-24T23:41:48.453+0000] {processor.py:161} INFO - Started process (PID=926) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:41:48.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:41:48.462+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:41:48.462+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:41:48.488+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:41:48.526+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:41:48.526+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:41:48.543+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:41:48.543+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:41:48.558+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.113 seconds
+[2024-03-24T23:42:18.969+0000] {processor.py:161} INFO - Started process (PID=933) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:42:18.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:42:18.978+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:42:18.978+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:42:19.009+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:42:19.047+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:42:19.047+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:42:19.064+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:42:19.064+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:42:19.075+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.117 seconds
+[2024-03-24T23:42:49.528+0000] {processor.py:161} INFO - Started process (PID=940) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:42:49.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:42:49.535+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:42:49.535+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:42:49.563+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:42:49.613+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:42:49.612+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:42:49.631+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:42:49.631+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:42:49.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.124 seconds
+[2024-03-24T23:43:20.086+0000] {processor.py:161} INFO - Started process (PID=947) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:43:20.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:43:20.092+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:43:20.091+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:43:20.118+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:43:20.148+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:43:20.148+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:43:20.163+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:43:20.162+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:43:20.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.096 seconds
+[2024-03-24T23:43:50.528+0000] {processor.py:161} INFO - Started process (PID=954) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:43:50.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:43:50.535+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:43:50.535+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:43:50.562+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:43:50.596+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:43:50.596+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:43:50.610+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:43:50.609+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:43:50.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.101 seconds
+[2024-03-24T23:44:20.927+0000] {processor.py:161} INFO - Started process (PID=961) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:44:20.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:44:20.931+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:44:20.931+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:44:20.944+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:44:20.968+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:44:20.968+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:44:20.983+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:44:20.983+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:44:20.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.071 seconds
+[2024-03-24T23:44:51.470+0000] {processor.py:161} INFO - Started process (PID=968) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:44:51.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:44:51.477+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:44:51.476+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:44:51.496+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:44:51.538+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:44:51.538+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:44:51.562+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:44:51.562+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:44:51.577+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.113 seconds
+[2024-03-24T23:45:21.944+0000] {processor.py:161} INFO - Started process (PID=975) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:45:21.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:45:21.952+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:45:21.951+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:45:21.971+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:45:22.012+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:45:22.011+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:45:22.033+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:45:22.033+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:45:22.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.109 seconds
+[2024-03-24T23:45:52.555+0000] {processor.py:161} INFO - Started process (PID=982) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:45:52.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:45:52.567+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:45:52.566+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:45:52.600+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:45:52.641+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:45:52.640+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:45:52.662+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:45:52.662+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:45:52.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.134 seconds
+[2024-03-24T23:46:23.172+0000] {processor.py:161} INFO - Started process (PID=989) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:46:23.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:46:23.184+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:46:23.183+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:46:23.218+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:46:23.251+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:46:23.250+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:46:23.278+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:46:23.278+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:46:23.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.132 seconds
+[2024-03-24T23:46:53.661+0000] {processor.py:161} INFO - Started process (PID=996) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:46:53.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:46:53.669+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:46:53.669+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:46:53.692+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:46:53.716+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:46:53.716+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:46:53.732+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:46:53.732+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:46:53.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.093 seconds
+[2024-03-24T23:47:24.188+0000] {processor.py:161} INFO - Started process (PID=1003) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:47:24.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:47:24.192+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:47:24.191+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:47:24.204+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:47:24.228+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:47:24.228+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:47:24.243+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:47:24.243+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:47:24.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.070 seconds
+[2024-03-24T23:47:54.728+0000] {processor.py:161} INFO - Started process (PID=1010) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:47:54.730+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:47:54.734+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:47:54.733+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:47:54.753+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:47:54.785+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:47:54.785+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:47:54.806+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:47:54.805+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:47:54.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.118 seconds
+[2024-03-24T23:48:25.191+0000] {processor.py:161} INFO - Started process (PID=1017) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:48:25.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:48:25.198+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:48:25.197+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:48:25.223+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:48:25.269+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:48:25.269+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:48:25.291+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:48:25.290+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:48:25.305+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.124 seconds
+[2024-03-24T23:48:55.695+0000] {processor.py:161} INFO - Started process (PID=1024) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:48:55.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:48:55.701+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:48:55.700+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:48:55.720+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:48:55.756+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:48:55.756+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:48:55.772+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:48:55.772+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:48:55.783+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.094 seconds
+[2024-03-24T23:49:26.193+0000] {processor.py:161} INFO - Started process (PID=1031) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:49:26.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:49:26.198+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:49:26.197+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:49:26.212+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:49:26.236+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:49:26.236+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:49:26.251+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:49:26.251+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:49:26.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.083 seconds
+[2024-03-24T23:49:56.728+0000] {processor.py:161} INFO - Started process (PID=1038) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:49:56.730+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:49:56.735+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:49:56.735+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:49:56.756+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:49:56.787+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:49:56.787+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:49:56.802+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:49:56.802+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:49:56.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.093 seconds
+[2024-03-24T23:50:27.328+0000] {processor.py:161} INFO - Started process (PID=1045) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:50:27.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:50:27.335+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:50:27.334+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:50:27.353+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:50:27.384+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:50:27.383+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:50:27.401+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:50:27.401+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:50:27.412+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.092 seconds
+[2024-03-24T23:50:57.888+0000] {processor.py:161} INFO - Started process (PID=1052) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:50:57.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:50:57.895+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:50:57.894+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:50:57.916+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:50:57.955+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:50:57.954+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:50:57.975+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:50:57.975+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:50:57.989+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.113 seconds
+[2024-03-24T23:51:28.411+0000] {processor.py:161} INFO - Started process (PID=1059) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:51:28.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:51:28.423+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:51:28.422+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:51:28.452+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:51:28.488+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:51:28.488+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:51:28.508+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:51:28.508+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:51:28.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.122 seconds
+[2024-03-24T23:51:58.973+0000] {processor.py:161} INFO - Started process (PID=1066) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:51:58.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:51:58.982+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:51:58.981+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:51:58.998+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:51:59.026+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:51:59.026+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:51:59.041+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:51:59.041+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:51:59.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.095 seconds
+[2024-03-24T23:52:29.546+0000] {processor.py:161} INFO - Started process (PID=1073) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:52:29.548+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:52:29.551+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:52:29.551+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:52:29.568+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:52:29.598+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:52:29.598+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:52:29.612+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:52:29.612+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:52:29.623+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.082 seconds
+[2024-03-24T23:53:00.358+0000] {processor.py:161} INFO - Started process (PID=1080) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:53:00.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:53:00.366+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:53:00.366+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:53:00.392+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:53:00.685+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:53:00.685+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:53:00.722+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:53:00.722+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:53:00.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.395 seconds
+[2024-03-24T23:53:30.800+0000] {processor.py:161} INFO - Started process (PID=1087) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:53:30.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:53:30.804+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:53:30.804+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:53:30.822+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:53:30.852+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:53:30.851+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:53:30.867+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:53:30.866+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:53:30.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.090 seconds
+[2024-03-24T23:54:01.261+0000] {processor.py:161} INFO - Started process (PID=1094) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:54:01.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:54:01.267+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:54:01.267+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:54:01.286+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:54:01.316+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:54:01.316+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:54:01.329+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:54:01.329+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:54:01.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.085 seconds
+[2024-03-24T23:54:31.675+0000] {processor.py:161} INFO - Started process (PID=1100) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:54:31.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:54:31.681+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:54:31.681+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:54:31.697+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:54:31.725+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:54:31.725+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:54:31.738+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:54:31.738+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:54:31.748+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.079 seconds
+[2024-03-24T23:55:02.160+0000] {processor.py:161} INFO - Started process (PID=1107) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:55:02.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:55:02.167+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:55:02.166+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:55:02.186+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:55:02.215+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:55:02.214+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:55:02.229+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:55:02.229+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:55:02.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.088 seconds
+[2024-03-24T23:55:32.617+0000] {processor.py:161} INFO - Started process (PID=1114) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:55:32.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:55:32.622+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:55:32.622+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:55:32.633+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:55:32.656+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:55:32.656+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:55:32.671+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:55:32.671+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:55:32.682+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.074 seconds
+[2024-03-24T23:56:03.208+0000] {processor.py:161} INFO - Started process (PID=1121) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:56:03.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:56:03.217+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:56:03.216+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:56:03.263+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:56:03.312+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:56:03.311+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:56:03.355+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:56:03.354+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:56:03.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.175 seconds
+[2024-03-24T23:56:33.698+0000] {processor.py:161} INFO - Started process (PID=1128) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:56:33.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:56:33.706+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:56:33.705+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:56:33.731+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:56:33.777+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:56:33.777+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:56:33.800+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:56:33.800+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:56:33.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.128 seconds
+[2024-03-24T23:57:04.326+0000] {processor.py:161} INFO - Started process (PID=1135) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:04.334+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:57:04.346+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:04.344+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:04.379+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:04.415+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:04.415+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:57:04.437+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:04.437+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:57:04.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.142 seconds
+[2024-03-24T23:57:16.647+0000] {processor.py:161} INFO - Started process (PID=1142) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:16.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:57:16.655+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:16.654+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:16.684+0000] {processor.py:840} INFO - DAG(s) 'Book-Recommendation-DAG' retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:16.742+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:16.742+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-24T23:57:16.770+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:16.770+0000] {dag.py:3834} INFO - Setting next_dagrun for Book-Recommendation-DAG to None, run_after=None
+[2024-03-24T23:57:16.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.176 seconds
+[2024-03-24T23:57:24.831+0000] {processor.py:161} INFO - Started process (PID=1143) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:24.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:57:24.837+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:24.836+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:24.844+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:24.841+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 13
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:57:24.844+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:24.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.039 seconds
+[2024-03-24T23:57:26.862+0000] {processor.py:161} INFO - Started process (PID=1144) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:26.865+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:57:26.874+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:26.873+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:26.885+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:26.884+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 14
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:57:26.886+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:26.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.079 seconds
+[2024-03-24T23:57:28.926+0000] {processor.py:161} INFO - Started process (PID=1145) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:28.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:57:28.932+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:28.931+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:28.938+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:28.937+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 14
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:57:28.939+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:28.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.049 seconds
+[2024-03-24T23:57:59.559+0000] {processor.py:161} INFO - Started process (PID=1152) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:59.564+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:57:59.575+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:59.575+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:59.584+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:57:59.583+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 14
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:57:59.584+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:57:59.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.070 seconds
+[2024-03-24T23:58:04.633+0000] {processor.py:161} INFO - Started process (PID=1153) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:58:04.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:58:04.637+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:58:04.636+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:58:04.642+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:58:04.641+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 14
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:58:04.643+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:58:04.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.032 seconds
+[2024-03-24T23:58:35.133+0000] {processor.py:161} INFO - Started process (PID=1160) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:58:35.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:58:35.141+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:58:35.140+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:58:35.148+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:58:35.146+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 14
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:58:35.148+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:58:35.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.044 seconds
+[2024-03-24T23:59:00.656+0000] {processor.py:161} INFO - Started process (PID=1167) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:00.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:59:00.658+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:59:00.658+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:00.666+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:59:00.665+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 14
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:59:00.666+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:00.690+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.042 seconds
+[2024-03-24T23:59:31.398+0000] {processor.py:161} INFO - Started process (PID=1174) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:31.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:59:31.401+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:59:31.401+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:31.409+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:59:31.407+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 14
+    default_args = {
+    ^
+IndentationError: expected an indented block
+[2024-03-24T23:59:31.409+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:31.438+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.050 seconds
+[2024-03-24T23:59:53.834+0000] {processor.py:161} INFO - Started process (PID=1181) to work on /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:53.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/book-recommendation-dag.py for tasks to queue
+[2024-03-24T23:59:53.838+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:59:53.838+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:53.846+0000] {logging_mixin.py:188} INFO - [2024-03-24T23:59:53.845+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/book-recommendation-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 16
+    default_args = {
+                   ^
+IndentationError: expected an indented block
+[2024-03-24T23:59:53.847+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/book-recommendation-dag.py
+[2024-03-24T23:59:53.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/book-recommendation-dag.py took 0.055 seconds

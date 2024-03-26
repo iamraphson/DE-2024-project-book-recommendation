@@ -1,0 +1,19 @@
+[2024-03-25T20:25:54.022+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.uninstall_pip_package_task manual__2024-03-25T20:24:27.367386+00:00 [queued]>
+[2024-03-25T20:25:54.027+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.uninstall_pip_package_task manual__2024-03-25T20:24:27.367386+00:00 [queued]>
+[2024-03-25T20:25:54.028+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T20:25:54.040+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): uninstall_pip_package_task> on 2024-03-25 20:24:27.367386+00:00
+[2024-03-25T20:25:54.044+0000] {standard_task_runner.py:60} INFO - Started process 1458 to run task
+[2024-03-25T20:25:54.047+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'uninstall_pip_package_task', 'manual__2024-03-25T20:24:27.367386+00:00', '--job-id', '268', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmph07njndk']
+[2024-03-25T20:25:54.050+0000] {standard_task_runner.py:88} INFO - Job 268: Subtask uninstall_pip_package_task
+[2024-03-25T20:25:54.081+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.uninstall_pip_package_task manual__2024-03-25T20:24:27.367386+00:00 [running]> on host 992e1288d09b
+[2024-03-25T20:25:54.127+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='uninstall_pip_package_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T20:24:27.367386+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T20:24:27.367386+00:00'
+[2024-03-25T20:25:54.129+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-25T20:25:54.129+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'pip uninstall --yes kaggle']
+[2024-03-25T20:25:54.139+0000] {subprocess.py:86} INFO - Output:
+[2024-03-25T20:25:54.491+0000] {subprocess.py:93} INFO - Found existing installation: kaggle 1.6.8
+[2024-03-25T20:25:54.500+0000] {subprocess.py:93} INFO - Uninstalling kaggle-1.6.8:
+[2024-03-25T20:25:54.502+0000] {subprocess.py:93} INFO -   Successfully uninstalled kaggle-1.6.8
+[2024-03-25T20:25:54.556+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-25T20:25:54.575+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=uninstall_pip_package_task, execution_date=20240325T202427, start_date=20240325T202554, end_date=20240325T202554
+[2024-03-25T20:25:54.601+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-25T20:25:54.612+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

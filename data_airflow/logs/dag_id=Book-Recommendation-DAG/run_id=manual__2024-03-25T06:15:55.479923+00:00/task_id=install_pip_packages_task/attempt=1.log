@@ -1,0 +1,29 @@
+[2024-03-25T06:15:56.867+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.install_pip_packages_task manual__2024-03-25T06:15:55.479923+00:00 [queued]>
+[2024-03-25T06:15:56.874+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.install_pip_packages_task manual__2024-03-25T06:15:55.479923+00:00 [queued]>
+[2024-03-25T06:15:56.874+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T06:15:56.881+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): install_pip_packages_task> on 2024-03-25 06:15:55.479923+00:00
+[2024-03-25T06:15:56.887+0000] {standard_task_runner.py:60} INFO - Started process 8091 to run task
+[2024-03-25T06:15:56.891+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'install_pip_packages_task', 'manual__2024-03-25T06:15:55.479923+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpw61ix2vo']
+[2024-03-25T06:15:56.896+0000] {standard_task_runner.py:88} INFO - Job 166: Subtask install_pip_packages_task
+[2024-03-25T06:15:56.962+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.install_pip_packages_task manual__2024-03-25T06:15:55.479923+00:00 [running]> on host 9654d883592e
+[2024-03-25T06:15:57.015+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='install_pip_packages_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T06:15:55.479923+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T06:15:55.479923+00:00'
+[2024-03-25T06:15:57.017+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-25T06:15:57.018+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'pip install --user kaggle']
+[2024-03-25T06:15:57.032+0000] {subprocess.py:86} INFO - Output:
+[2024-03-25T06:15:57.444+0000] {subprocess.py:93} INFO - Requirement already satisfied: kaggle in /home/***/.local/lib/python3.8/site-packages (1.6.6)
+[2024-03-25T06:15:57.447+0000] {subprocess.py:93} INFO - Requirement already satisfied: six>=1.10 in /home/***/.local/lib/python3.8/site-packages (from kaggle) (1.16.0)
+[2024-03-25T06:15:57.448+0000] {subprocess.py:93} INFO - Requirement already satisfied: certifi in /home/***/.local/lib/python3.8/site-packages (from kaggle) (2024.2.2)
+[2024-03-25T06:15:57.448+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dateutil in /home/***/.local/lib/python3.8/site-packages (from kaggle) (2.9.0.post0)
+[2024-03-25T06:15:57.448+0000] {subprocess.py:93} INFO - Requirement already satisfied: requests in /home/***/.local/lib/python3.8/site-packages (from kaggle) (2.31.0)
+[2024-03-25T06:15:57.449+0000] {subprocess.py:93} INFO - Requirement already satisfied: tqdm in /home/***/.local/lib/python3.8/site-packages (from kaggle) (4.66.2)
+[2024-03-25T06:15:57.449+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-slugify in /home/***/.local/lib/python3.8/site-packages (from kaggle) (8.0.4)
+[2024-03-25T06:15:57.449+0000] {subprocess.py:93} INFO - Requirement already satisfied: urllib3 in /home/***/.local/lib/python3.8/site-packages (from kaggle) (1.26.18)
+[2024-03-25T06:15:57.450+0000] {subprocess.py:93} INFO - Requirement already satisfied: bleach in /home/***/.local/lib/python3.8/site-packages (from kaggle) (6.1.0)
+[2024-03-25T06:15:57.452+0000] {subprocess.py:93} INFO - Requirement already satisfied: webencodings in /home/***/.local/lib/python3.8/site-packages (from bleach->kaggle) (0.5.1)
+[2024-03-25T06:15:57.455+0000] {subprocess.py:93} INFO - Requirement already satisfied: text-unidecode>=1.3 in /home/***/.local/lib/python3.8/site-packages (from python-slugify->kaggle) (1.3)
+[2024-03-25T06:15:57.458+0000] {subprocess.py:93} INFO - Requirement already satisfied: charset-normalizer<4,>=2 in /home/***/.local/lib/python3.8/site-packages (from requests->kaggle) (3.3.2)
+[2024-03-25T06:15:57.458+0000] {subprocess.py:93} INFO - Requirement already satisfied: idna<4,>=2.5 in /home/***/.local/lib/python3.8/site-packages (from requests->kaggle) (3.6)
+[2024-03-25T06:15:59.268+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-25T06:15:59.286+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=install_pip_packages_task, execution_date=20240325T061555, start_date=20240325T061556, end_date=20240325T061559
+[2024-03-25T06:15:59.338+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-25T06:15:59.364+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

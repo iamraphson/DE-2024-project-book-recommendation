@@ -1,0 +1,26 @@
+[2024-03-25T00:48:05.291+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T00:47:54.835920+00:00 [queued]>
+[2024-03-25T00:48:05.453+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T00:47:54.835920+00:00 [queued]>
+[2024-03-25T00:48:05.453+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T00:48:05.467+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): do_clean_to_parquet_task> on 2024-03-25 00:47:54.835920+00:00
+[2024-03-25T00:48:05.471+0000] {standard_task_runner.py:60} INFO - Started process 2341 to run task
+[2024-03-25T00:48:05.474+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'do_clean_to_parquet_task', 'manual__2024-03-25T00:47:54.835920+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpmbk0eu8z']
+[2024-03-25T00:48:05.477+0000] {standard_task_runner.py:88} INFO - Job 21: Subtask do_clean_to_parquet_task
+[2024-03-25T00:48:05.519+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T00:47:54.835920+00:00 [running]> on host 9654d883592e
+[2024-03-25T00:48:05.582+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='do_clean_to_parquet_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T00:47:54.835920+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T00:47:54.835920+00:00'
+[2024-03-25T00:48:05.585+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 13, in do_clean_to_parquet
+    for filename in os.listdir(dataset_download_path):
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/book-recommendation-dataset/'
+[2024-03-25T00:48:05.591+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Book-Recommendation-DAG, task_id=do_clean_to_parquet_task, execution_date=20240325T004754, start_date=20240325T004805, end_date=20240325T004805
+[2024-03-25T00:48:05.597+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 21 for task do_clean_to_parquet_task ([Errno 2] No such file or directory: '/opt/airflow/book-recommendation-dataset/'; 2341)
+[2024-03-25T00:48:05.615+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-25T00:48:05.630+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,45 @@
+[2024-03-25T03:40:39.452+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T03:40:31.500214+00:00 [queued]>
+[2024-03-25T03:40:39.457+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T03:40:31.500214+00:00 [queued]>
+[2024-03-25T03:40:39.457+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T03:40:39.463+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): do_clean_to_parquet_task> on 2024-03-25 03:40:31.500214+00:00
+[2024-03-25T03:40:39.467+0000] {standard_task_runner.py:60} INFO - Started process 4072 to run task
+[2024-03-25T03:40:39.470+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'do_clean_to_parquet_task', 'manual__2024-03-25T03:40:31.500214+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpggi64f9m']
+[2024-03-25T03:40:39.473+0000] {standard_task_runner.py:88} INFO - Job 71: Subtask do_clean_to_parquet_task
+[2024-03-25T03:40:39.502+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T03:40:31.500214+00:00 [running]> on host 9654d883592e
+[2024-03-25T03:40:39.543+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='do_clean_to_parquet_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T03:40:31.500214+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T03:40:31.500214+00:00'
+[2024-03-25T03:40:40.854+0000] {warnings.py:109} WARNING - /opt/***/dags/book-recommendation-dag.py:24: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  dataset_df = pd.read_csv(f'{dataset_download_path}{filename}')
+
+[2024-03-25T03:40:40.920+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 42, in do_clean_to_parquet
+    dataset_df.astype(books_dtype)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 6305, in astype
+    res_col = col.astype(dtype=cdt, copy=copy, errors=errors)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 6324, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 451, in astype
+    return self.apply(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 352, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 511, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/dtypes/astype.py", line 242, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/dtypes/astype.py", line 187, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/dtypes/astype.py", line 138, in _astype_nansafe
+    return arr.astype(dtype, copy=True)
+ValueError: invalid literal for int() with base 10: 'DK Publishing Inc': Error while type casting for column 'year_of_publication'
+[2024-03-25T03:40:40.933+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Book-Recommendation-DAG, task_id=do_clean_to_parquet_task, execution_date=20240325T034031, start_date=20240325T034039, end_date=20240325T034040
+[2024-03-25T03:40:40.941+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 71 for task do_clean_to_parquet_task (invalid literal for int() with base 10: 'DK Publishing Inc': Error while type casting for column 'year_of_publication'; 4072)
+[2024-03-25T03:40:40.987+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-25T03:40:41.002+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

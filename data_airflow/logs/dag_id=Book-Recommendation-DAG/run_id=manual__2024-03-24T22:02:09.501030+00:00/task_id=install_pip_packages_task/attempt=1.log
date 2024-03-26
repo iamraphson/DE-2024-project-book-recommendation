@@ -1,0 +1,50 @@
+[2024-03-24T22:02:11.911+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.install_pip_packages_task manual__2024-03-24T22:02:09.501030+00:00 [queued]>
+[2024-03-24T22:02:11.920+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.install_pip_packages_task manual__2024-03-24T22:02:09.501030+00:00 [queued]>
+[2024-03-24T22:02:11.921+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-24T22:02:11.929+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): install_pip_packages_task> on 2024-03-24 22:02:09.501030+00:00
+[2024-03-24T22:02:11.935+0000] {standard_task_runner.py:60} INFO - Started process 253 to run task
+[2024-03-24T22:02:11.938+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'install_pip_packages_task', 'manual__2024-03-24T22:02:09.501030+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmp2jn67_16']
+[2024-03-24T22:02:11.939+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask install_pip_packages_task
+[2024-03-24T22:02:11.987+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.install_pip_packages_task manual__2024-03-24T22:02:09.501030+00:00 [running]> on host 9654d883592e
+[2024-03-24T22:02:12.041+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='install_pip_packages_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-24T22:02:09.501030+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-24T22:02:09.501030+00:00'
+[2024-03-24T22:02:12.043+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T22:02:12.044+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'pip install --user kaggle']
+[2024-03-24T22:02:12.055+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T22:02:13.175+0000] {subprocess.py:93} INFO - Collecting kaggle
+[2024-03-24T22:02:13.229+0000] {subprocess.py:93} INFO -   Downloading kaggle-1.6.6.tar.gz (84 kB)
+[2024-03-24T22:02:13.245+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.6/84.6 kB 5.5 MB/s eta 0:00:00
+[2024-03-24T22:02:13.261+0000] {subprocess.py:93} INFO -   Preparing metadata (setup.py): started
+[2024-03-24T22:02:13.819+0000] {subprocess.py:93} INFO -   Preparing metadata (setup.py): finished with status 'done'
+[2024-03-24T22:02:13.832+0000] {subprocess.py:93} INFO - Requirement already satisfied: six>=1.10 in /home/***/.local/lib/python3.8/site-packages (from kaggle) (1.16.0)
+[2024-03-24T22:02:13.834+0000] {subprocess.py:93} INFO - Requirement already satisfied: certifi in /home/***/.local/lib/python3.8/site-packages (from kaggle) (2024.2.2)
+[2024-03-24T22:02:13.834+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-dateutil in /home/***/.local/lib/python3.8/site-packages (from kaggle) (2.9.0.post0)
+[2024-03-24T22:02:13.835+0000] {subprocess.py:93} INFO - Requirement already satisfied: requests in /home/***/.local/lib/python3.8/site-packages (from kaggle) (2.31.0)
+[2024-03-24T22:02:13.967+0000] {subprocess.py:93} INFO - Collecting tqdm (from kaggle)
+[2024-03-24T22:02:14.000+0000] {subprocess.py:93} INFO -   Downloading tqdm-4.66.2-py3-none-any.whl.metadata (57 kB)
+[2024-03-24T22:02:14.007+0000] {subprocess.py:93} INFO -      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.6/57.6 kB 11.7 MB/s eta 0:00:00
+[2024-03-24T22:02:14.009+0000] {subprocess.py:93} INFO - Requirement already satisfied: python-slugify in /home/***/.local/lib/python3.8/site-packages (from kaggle) (8.0.4)
+[2024-03-24T22:02:14.009+0000] {subprocess.py:93} INFO - Requirement already satisfied: urllib3 in /home/***/.local/lib/python3.8/site-packages (from kaggle) (1.26.18)
+[2024-03-24T22:02:14.121+0000] {subprocess.py:93} INFO - Collecting bleach (from kaggle)
+[2024-03-24T22:02:14.130+0000] {subprocess.py:93} INFO -   Downloading bleach-6.1.0-py3-none-any.whl.metadata (30 kB)
+[2024-03-24T22:02:14.161+0000] {subprocess.py:93} INFO - Collecting webencodings (from bleach->kaggle)
+[2024-03-24T22:02:14.168+0000] {subprocess.py:93} INFO -   Downloading webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+[2024-03-24T22:02:14.176+0000] {subprocess.py:93} INFO - Requirement already satisfied: text-unidecode>=1.3 in /home/***/.local/lib/python3.8/site-packages (from python-slugify->kaggle) (1.3)
+[2024-03-24T22:02:14.179+0000] {subprocess.py:93} INFO - Requirement already satisfied: charset-normalizer<4,>=2 in /home/***/.local/lib/python3.8/site-packages (from requests->kaggle) (3.3.2)
+[2024-03-24T22:02:14.180+0000] {subprocess.py:93} INFO - Requirement already satisfied: idna<4,>=2.5 in /home/***/.local/lib/python3.8/site-packages (from requests->kaggle) (3.6)
+[2024-03-24T22:02:14.212+0000] {subprocess.py:93} INFO - Downloading bleach-6.1.0-py3-none-any.whl (162 kB)
+[2024-03-24T22:02:14.224+0000] {subprocess.py:93} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.8/162.8 kB 14.2 MB/s eta 0:00:00
+[2024-03-24T22:02:14.235+0000] {subprocess.py:93} INFO - Downloading tqdm-4.66.2-py3-none-any.whl (78 kB)
+[2024-03-24T22:02:14.241+0000] {subprocess.py:93} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 16.2 MB/s eta 0:00:00
+[2024-03-24T22:02:14.249+0000] {subprocess.py:93} INFO - Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+[2024-03-24T22:02:14.257+0000] {subprocess.py:93} INFO - Building wheels for collected packages: kaggle
+[2024-03-24T22:02:14.258+0000] {subprocess.py:93} INFO -   Building wheel for kaggle (setup.py): started
+[2024-03-24T22:02:14.662+0000] {subprocess.py:93} INFO -   Building wheel for kaggle (setup.py): finished with status 'done'
+[2024-03-24T22:02:14.662+0000] {subprocess.py:93} INFO -   Created wheel for kaggle: filename=kaggle-1.6.6-py3-none-any.whl size=111941 sha256=14223772c85d7fbb71ef9ffb02078baef39685c3effb83c47404fb78865e723a
+[2024-03-24T22:02:14.663+0000] {subprocess.py:93} INFO -   Stored in directory: /home/***/.cache/pip/wheels/0a/e0/6d/fbc9dff0a755904e8a1a5e0730d0918114270dc17c391c9a91
+[2024-03-24T22:02:14.665+0000] {subprocess.py:93} INFO - Successfully built kaggle
+[2024-03-24T22:02:16.419+0000] {subprocess.py:93} INFO - Installing collected packages: webencodings, tqdm, bleach, kaggle
+[2024-03-24T22:02:16.610+0000] {subprocess.py:93} INFO - Successfully installed bleach-6.1.0 kaggle-1.6.6 tqdm-4.66.2 webencodings-0.5.1
+[2024-03-24T22:02:16.836+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T22:02:16.870+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=install_pip_packages_task, execution_date=20240324T220209, start_date=20240324T220211, end_date=20240324T220216
+[2024-03-24T22:02:16.961+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T22:02:17.023+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

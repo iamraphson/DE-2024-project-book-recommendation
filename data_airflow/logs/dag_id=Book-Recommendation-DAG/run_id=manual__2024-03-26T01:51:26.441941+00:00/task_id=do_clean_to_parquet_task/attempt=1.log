@@ -1,0 +1,24 @@
+[2024-03-26T01:51:33.312+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-26T01:51:26.441941+00:00 [queued]>
+[2024-03-26T01:51:33.317+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-26T01:51:26.441941+00:00 [queued]>
+[2024-03-26T01:51:33.317+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-26T01:51:33.323+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): do_clean_to_parquet_task> on 2024-03-26 01:51:26.441941+00:00
+[2024-03-26T01:51:33.330+0000] {standard_task_runner.py:60} INFO - Started process 3429 to run task
+[2024-03-26T01:51:33.333+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'do_clean_to_parquet_task', 'manual__2024-03-26T01:51:26.441941+00:00', '--job-id', '339', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpacdyddkl']
+[2024-03-26T01:51:33.336+0000] {standard_task_runner.py:88} INFO - Job 339: Subtask do_clean_to_parquet_task
+[2024-03-26T01:51:33.367+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-26T01:51:26.441941+00:00 [running]> on host 992e1288d09b
+[2024-03-26T01:51:33.409+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='do_clean_to_parquet_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T01:51:26.441941+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T01:51:26.441941+00:00'
+[2024-03-26T01:51:34.200+0000] {logging_mixin.py:188} INFO - dataset_df.columns Index(['user_id', 'isbn', 'rating'], dtype='object')
+[2024-03-26T01:51:34.362+0000] {book-recommendation-dag.py:109} INFO - Done cleaning up!
+[2024-03-26T01:51:35.358+0000] {logging_mixin.py:188} INFO - dataset_df.columns Index(['user_id', 'age', 'city', 'state', 'country'], dtype='object')
+[2024-03-26T01:51:35.437+0000] {book-recommendation-dag.py:109} INFO - Done cleaning up!
+[2024-03-26T01:51:36.275+0000] {warnings.py:109} WARNING - /opt/***/dags/book-recommendation-dag.py:53: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  dataset_df = pd.read_csv(f'{dataset_download_path}{filename}')
+
+[2024-03-26T01:51:36.444+0000] {logging_mixin.py:188} INFO - dataset_df.columns Index(['isbn', 'book_title', 'book_author', 'year_of_publication',
+       'publisher'],
+      dtype='object')
+[2024-03-26T01:51:36.628+0000] {book-recommendation-dag.py:109} INFO - Done cleaning up!
+[2024-03-26T01:51:36.642+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-26T01:51:36.651+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=do_clean_to_parquet_task, execution_date=20240326T015126, start_date=20240326T015133, end_date=20240326T015136
+[2024-03-26T01:51:36.688+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T01:51:36.715+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

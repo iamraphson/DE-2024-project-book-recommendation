@@ -1,0 +1,42 @@
+[2024-03-25T04:36:09.474+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T04:35:59.430148+00:00 [queued]>
+[2024-03-25T04:36:09.481+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T04:35:59.430148+00:00 [queued]>
+[2024-03-25T04:36:09.482+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T04:36:09.493+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): do_clean_to_parquet_task> on 2024-03-25 04:35:59.430148+00:00
+[2024-03-25T04:36:09.502+0000] {standard_task_runner.py:60} INFO - Started process 5330 to run task
+[2024-03-25T04:36:09.506+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'do_clean_to_parquet_task', 'manual__2024-03-25T04:35:59.430148+00:00', '--job-id', '94', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpf3xsg1e9']
+[2024-03-25T04:36:09.509+0000] {standard_task_runner.py:88} INFO - Job 94: Subtask do_clean_to_parquet_task
+[2024-03-25T04:36:09.545+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.do_clean_to_parquet_task manual__2024-03-25T04:35:59.430148+00:00 [running]> on host 9654d883592e
+[2024-03-25T04:36:09.600+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='do_clean_to_parquet_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T04:35:59.430148+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T04:35:59.430148+00:00'
+[2024-03-25T04:36:10.409+0000] {logging_mixin.py:188} INFO - dataset_df.dtypes user_id              Int64
+location    string[python]
+age                  Int64
+dtype: object
+[2024-03-25T04:36:10.914+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 64, in do_clean_to_parquet
+    dataset_df.to_parquet(parquet_loc)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 2889, in to_parquet
+    return to_parquet(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 411, in to_parquet
+    impl.write(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 161, in write
+    path_or_handle, handles, kwargs["filesystem"] = _get_path_or_handle(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/parquet.py", line 110, in _get_path_or_handle
+    handles = get_handle(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/common.py", line 737, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/common.py", line 600, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/***/book-recommendation-dataset/pq'
+[2024-03-25T04:36:10.924+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Book-Recommendation-DAG, task_id=do_clean_to_parquet_task, execution_date=20240325T043559, start_date=20240325T043609, end_date=20240325T043610
+[2024-03-25T04:36:10.941+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 94 for task do_clean_to_parquet_task (Cannot save file into a non-existent directory: '/opt/***/book-recommendation-dataset/pq'; 5330)
+[2024-03-25T04:36:10.996+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-25T04:36:11.026+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

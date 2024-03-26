@@ -1,0 +1,19 @@
+[2024-03-24T22:03:22.412+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.pulldown_dataset_task manual__2024-03-24T22:03:18.007489+00:00 [queued]>
+[2024-03-24T22:03:22.417+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.pulldown_dataset_task manual__2024-03-24T22:03:18.007489+00:00 [queued]>
+[2024-03-24T22:03:22.417+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-24T22:03:22.425+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): pulldown_dataset_task> on 2024-03-24 22:03:18.007489+00:00
+[2024-03-24T22:03:22.428+0000] {standard_task_runner.py:60} INFO - Started process 370 to run task
+[2024-03-24T22:03:22.429+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'pulldown_dataset_task', 'manual__2024-03-24T22:03:18.007489+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpc6eom_67']
+[2024-03-24T22:03:22.430+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask pulldown_dataset_task
+[2024-03-24T22:03:22.452+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.pulldown_dataset_task manual__2024-03-24T22:03:18.007489+00:00 [running]> on host 9654d883592e
+[2024-03-24T22:03:22.487+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='pulldown_dataset_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-24T22:03:18.007489+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-24T22:03:18.007489+00:00'
+[2024-03-24T22:03:22.488+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-24T22:03:22.488+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'kaggle datasets download arashnic/book-recommendation-dataset --path /opt/***/book-recommendation-dataset/ --unzip']
+[2024-03-24T22:03:22.494+0000] {subprocess.py:86} INFO - Output:
+[2024-03-24T22:03:23.333+0000] {subprocess.py:93} INFO - Downloading book-recommendation-dataset.zip to /opt/***/book-recommendation-dataset
+[2024-03-24T22:03:24.204+0000] {subprocess.py:93} INFO -   0%|          | 0.00/24.3M [00:00<?, ?B/s] 21%|██        | 5.00M/24.3M [00:00<00:00, 34.7MB/s] 62%|██████▏   | 15.0M/24.3M [00:00<00:00, 64.2MB/s] 90%|█████████ | 22.0M/24.3M [00:00<00:00, 57.6MB/s]100%|██████████| 24.3M/24.3M [00:00<00:00, 55.5MB/s]
+[2024-03-24T22:03:24.205+0000] {subprocess.py:93} INFO - 
+[2024-03-24T22:03:24.223+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-24T22:03:24.241+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=pulldown_dataset_task, execution_date=20240324T220318, start_date=20240324T220322, end_date=20240324T220324
+[2024-03-24T22:03:24.279+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T22:03:24.295+0000] {taskinstance.py:3312} INFO - 2 downstream tasks scheduled from follow-on schedule check

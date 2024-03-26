@@ -1,0 +1,44 @@
+[2024-03-26T01:51:43.558+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.create_table_partitions_task manual__2024-03-26T01:51:26.441941+00:00 [queued]>
+[2024-03-26T01:51:43.562+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.create_table_partitions_task manual__2024-03-26T01:51:26.441941+00:00 [queued]>
+[2024-03-26T01:51:43.563+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-26T01:51:43.568+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryInsertJobOperator): create_table_partitions_task> on 2024-03-26 01:51:26.441941+00:00
+[2024-03-26T01:51:43.575+0000] {standard_task_runner.py:60} INFO - Started process 3460 to run task
+[2024-03-26T01:51:43.578+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'create_table_partitions_task', 'manual__2024-03-26T01:51:26.441941+00:00', '--job-id', '344', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmprljdn3q0']
+[2024-03-26T01:51:43.581+0000] {standard_task_runner.py:88} INFO - Job 344: Subtask create_table_partitions_task
+[2024-03-26T01:51:43.620+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.create_table_partitions_task manual__2024-03-26T01:51:26.441941+00:00 [running]> on host 992e1288d09b
+[2024-03-26T01:51:43.663+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='create_table_partitions_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T01:51:26.441941+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T01:51:26.441941+00:00'
+[2024-03-26T01:51:43.666+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-03-26T01:51:43.666+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-26T01:51:43.669+0000] {base.py:83} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2024-03-26T01:51:43.670+0000] {credentials_provider.py:353} INFO - Getting connection using `google.auth.default()` since no explicit credentials are provided.
+[2024-03-26T01:51:43.716+0000] {bigquery.py:2811} INFO - Executing: {'query': {'query': 'DROP TABLE IF EXISTS `book_recommendation_analytics.books`;\n\nCREATE TABLE IF NOT EXISTS\n  `book_recommendation_analytics.books`\nPARTITION BY year_of_publication\nCLUSTER BY\n  `year_of_publication`,\n  `publisher`,\n  `book_author` AS\nSELECT\n  *\nFROM\n  `book_recommendataion_wh.books`;', 'useLegacySql': False}}'
+[2024-03-26T01:51:43.717+0000] {bigquery.py:1613} INFO - Inserting job ***_Book_Recommendation_DAG_create_table_partitions_task_2024_03_26T01_51_26_441941_00_00_8871e77386eaa9946aead71e691152bb
+[2024-03-26T01:51:45.226+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 2870, in execute
+    job.result(timeout=self.result_timeout, retry=self.result_retry)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1595, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1584, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Query error: PARTITION BY expression must be DATE(<timestamp_column>), DATE(<datetime_column>), DATETIME_TRUNC(<datetime_column>, DAY/HOUR/MONTH/YEAR), a DATE column, TIMESTAMP_TRUNC(<timestamp_column>, DAY/HOUR/MONTH/YEAR), DATE_TRUNC(<date_column>, MONTH/YEAR), or RANGE_BUCKET(<int64_column>, GENERATE_ARRAY(<int64_value>, <int64_value>[, <int64_value>])) at [3:1]
+
+Location: us-west1
+Job ID: airflow_Book_Recommendation_DAG_create_table_partitions_task_2024_03_26T01_51_26_441941_00_00_8871e77386eaa9946aead71e691152bb
+
+[2024-03-26T01:51:45.237+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Book-Recommendation-DAG, task_id=create_table_partitions_task, execution_date=20240326T015126, start_date=20240326T015143, end_date=20240326T015145
+[2024-03-26T01:51:45.247+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 344 for task create_table_partitions_task (400 Query error: PARTITION BY expression must be DATE(<timestamp_column>), DATE(<datetime_column>), DATETIME_TRUNC(<datetime_column>, DAY/HOUR/MONTH/YEAR), a DATE column, TIMESTAMP_TRUNC(<timestamp_column>, DAY/HOUR/MONTH/YEAR), DATE_TRUNC(<date_column>, MONTH/YEAR), or RANGE_BUCKET(<int64_column>, GENERATE_ARRAY(<int64_value>, <int64_value>[, <int64_value>])) at [3:1]
+
+Location: us-west1
+Job ID: airflow_Book_Recommendation_DAG_create_table_partitions_task_2024_03_26T01_51_26_441941_00_00_8871e77386eaa9946aead71e691152bb
+; 3460)
+[2024-03-26T01:51:45.263+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-26T01:51:45.287+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,30 @@
+[2024-03-25T19:55:58.779+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_upload_pq_to_gcs_task manual__2024-03-25T19:55:47.069159+00:00 [queued]>
+[2024-03-25T19:55:58.784+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_upload_pq_to_gcs_task manual__2024-03-25T19:55:47.069159+00:00 [queued]>
+[2024-03-25T19:55:58.785+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T19:55:58.791+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): do_upload_pq_to_gcs_task> on 2024-03-25 19:55:47.069159+00:00
+[2024-03-25T19:55:58.794+0000] {standard_task_runner.py:60} INFO - Started process 518 to run task
+[2024-03-25T19:55:58.796+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'do_upload_pq_to_gcs_task', 'manual__2024-03-25T19:55:47.069159+00:00', '--job-id', '228', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpkwpt_qlq']
+[2024-03-25T19:55:58.798+0000] {standard_task_runner.py:88} INFO - Job 228: Subtask do_upload_pq_to_gcs_task
+[2024-03-25T19:55:58.952+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.do_upload_pq_to_gcs_task manual__2024-03-25T19:55:47.069159+00:00 [running]> on host 992e1288d09b
+[2024-03-25T19:55:59.023+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='do_upload_pq_to_gcs_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T19:55:47.069159+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T19:55:47.069159+00:00'
+[2024-03-25T19:55:59.031+0000] {logging_mixin.py:188} INFO - gcs_pq_store_path book_recommendation_datalake_radiant-gateway-412001/book-recommendation-pq
+[2024-03-25T19:55:59.162+0000] {logging_mixin.py:188} INFO - dir_info.type FileType.Directory
+[2024-03-25T19:55:59.375+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/book-recommendation-dag.py", line 117, in do_upload_pq_to_gcs
+    gcs.delete_dir(gcs_pq_store_path)
+  File "pyarrow/_fs.pyx", line 616, in pyarrow._fs.FileSystem.delete_dir
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+FileNotFoundError: [Errno 2] google::cloud::Status(NOT_FOUND: Permanent error DeleteObject: No such object: book_recommendation_datalake_radiant-gateway-412001/book-recommendation-pq/ error_info={reason=notFound, domain=global, metadata={http_status_code=404}}). Detail: [errno 2] No such file or directory
+[2024-03-25T19:55:59.383+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Book-Recommendation-DAG, task_id=do_upload_pq_to_gcs_task, execution_date=20240325T195547, start_date=20240325T195558, end_date=20240325T195559
+[2024-03-25T19:55:59.394+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 228 for task do_upload_pq_to_gcs_task ([Errno 2] google::cloud::Status(NOT_FOUND: Permanent error DeleteObject: No such object: book_recommendation_datalake_radiant-gateway-412001/book-recommendation-pq/ error_info={reason=notFound, domain=global, metadata={http_status_code=404}}). Detail: [errno 2] No such file or directory; 518)
+[2024-03-25T19:55:59.412+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-25T19:55:59.432+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

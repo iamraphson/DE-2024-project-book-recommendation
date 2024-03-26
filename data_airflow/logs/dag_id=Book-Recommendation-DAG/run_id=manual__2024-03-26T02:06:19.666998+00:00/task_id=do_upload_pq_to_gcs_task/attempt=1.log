@@ -1,0 +1,14 @@
+[2024-03-26T02:06:33.850+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_upload_pq_to_gcs_task manual__2024-03-26T02:06:19.666998+00:00 [queued]>
+[2024-03-26T02:06:33.855+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.do_upload_pq_to_gcs_task manual__2024-03-26T02:06:19.666998+00:00 [queued]>
+[2024-03-26T02:06:33.855+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-26T02:06:33.861+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): do_upload_pq_to_gcs_task> on 2024-03-26 02:06:19.666998+00:00
+[2024-03-26T02:06:33.867+0000] {standard_task_runner.py:60} INFO - Started process 3980 to run task
+[2024-03-26T02:06:33.870+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'do_upload_pq_to_gcs_task', 'manual__2024-03-26T02:06:19.666998+00:00', '--job-id', '368', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmp9y8h8zow']
+[2024-03-26T02:06:33.874+0000] {standard_task_runner.py:88} INFO - Job 368: Subtask do_upload_pq_to_gcs_task
+[2024-03-26T02:06:33.909+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.do_upload_pq_to_gcs_task manual__2024-03-26T02:06:19.666998+00:00 [running]> on host 992e1288d09b
+[2024-03-26T02:06:33.948+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='do_upload_pq_to_gcs_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T02:06:19.666998+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T02:06:19.666998+00:00'
+[2024-03-26T02:06:36.325+0000] {book-recommendation-dag.py:125} INFO - Copied parquet to gsc
+[2024-03-26T02:06:36.329+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-26T02:06:36.349+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=do_upload_pq_to_gcs_task, execution_date=20240326T020619, start_date=20240326T020633, end_date=20240326T020636
+[2024-03-26T02:06:36.400+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T02:06:36.425+0000] {taskinstance.py:3312} INFO - 3 downstream tasks scheduled from follow-on schedule check

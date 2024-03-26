@@ -1,0 +1,16 @@
+[2024-03-25T06:48:20.790+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.clean_up_dataset_store_task manual__2024-03-25T06:47:59.940498+00:00 [queued]>
+[2024-03-25T06:48:20.795+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Book-Recommendation-DAG.clean_up_dataset_store_task manual__2024-03-25T06:47:59.940498+00:00 [queued]>
+[2024-03-25T06:48:20.795+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T06:48:20.801+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): clean_up_dataset_store_task> on 2024-03-25 06:47:59.940498+00:00
+[2024-03-25T06:48:20.805+0000] {standard_task_runner.py:60} INFO - Started process 291 to run task
+[2024-03-25T06:48:20.808+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Book-Recommendation-DAG', 'clean_up_dataset_store_task', 'manual__2024-03-25T06:47:59.940498+00:00', '--job-id', '181', '--raw', '--subdir', 'DAGS_FOLDER/book-recommendation-dag.py', '--cfg-path', '/tmp/tmpg231ntxe']
+[2024-03-25T06:48:20.810+0000] {standard_task_runner.py:88} INFO - Job 181: Subtask clean_up_dataset_store_task
+[2024-03-25T06:48:20.837+0000] {task_command.py:423} INFO - Running <TaskInstance: Book-Recommendation-DAG.clean_up_dataset_store_task manual__2024-03-25T06:47:59.940498+00:00 [running]> on host 238c395584a2
+[2024-03-25T06:48:20.881+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='iamraphson' AIRFLOW_CTX_DAG_ID='Book-Recommendation-DAG' AIRFLOW_CTX_TASK_ID='clean_up_dataset_store_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T06:47:59.940498+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T06:47:59.940498+00:00'
+[2024-03-25T06:48:20.883+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-25T06:48:20.884+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'rm -rf /opt/***/book-recommendation-dataset/']
+[2024-03-25T06:48:20.891+0000] {subprocess.py:86} INFO - Output:
+[2024-03-25T06:48:20.931+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-25T06:48:21.212+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Book-Recommendation-DAG, task_id=clean_up_dataset_store_task, execution_date=20240325T064759, start_date=20240325T064820, end_date=20240325T064821
+[2024-03-25T06:48:21.234+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-25T06:48:21.246+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
