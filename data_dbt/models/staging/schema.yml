@@ -1,0 +1,74 @@
+version: 2
+
+sources:
+  - name: staging
+    database: radiant-gateway-412001
+    schema: book_recommendation_analytics
+    tables:
+      - name: books
+      - name: ratings
+      - name: users
+models:
+  - name: stg_users
+    description: List of Users that used the book store.
+    columns:
+      - name: user_id
+        data_type: numeric
+        description: id assigned to the user.
+      - name: age
+        date_type: numeric
+        description: Age of the user.
+
+      - name: city
+        date_type: string
+        description: city of the user.
+
+      - name: state
+        date_type: string
+        description: state of the user.
+
+      - name: state
+        date_type: string
+        description: state of the user.
+
+      - name: country
+        date_type: string
+        description: Ratings given to books by users.
+
+  - name: stg_books
+    description: List of books in the book store.
+    columns:
+      - name: isbn
+        data_type: string
+        description: isbn of the book.
+
+      - name: book_title
+        data_type: string
+        description: Title of the book.
+
+      - name: book_author
+        data_type: string
+        description: Author of the book.
+
+      - name: year_of_publication
+        data_type: numeric
+        description: The year the book was published.
+
+      - name: publisher
+        data_type: string
+        description: publisher of the book
+
+  - name: stg_ratings
+    description: List of books in the book store.
+    columns:
+      - name: user_id
+        data_type: numeric
+        description: id of the user that gave the rating.
+
+      - name: isbn
+        data_type: string
+        description: isbn of the book that possesses the rating.
+
+      - name: rating
+        data_type: numeric
+        description: book's rating given by a user.

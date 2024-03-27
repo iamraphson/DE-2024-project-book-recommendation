@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: facts_full_ratings
+    description: >
+      This fact models contains table combination from rating, books and users.
+      This will help dashboard presentations.
+  - name: dim_rating_by_countries
+    description: Aggregated table of all rating by countries.
+    columns:
+      - name: country
+        data_type: string
+        description: Column for countries
+
+      - name: total_ratings
+        data_type: numeric
+        description: Total rating from countries
+
+  - name: dim_rating_by_age_range
+    description: Aggregated table of all rating from some age range.
+    columns:
+      - name: age_range
+        data_type: string
+        description: List of age range
+
+      - name: number_of_rating
+        data_type: numeric
+        description: Number of rating from age range
