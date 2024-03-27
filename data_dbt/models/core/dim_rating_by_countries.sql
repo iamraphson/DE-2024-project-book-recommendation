@@ -9,7 +9,7 @@ users as (
 
 select
     users.country as country,
-    sum(ratings.rating) as total_ratings
+    count(ratings.rating) as total_ratings
 from ratings
 join users on ratings.user_id = users.user_id
-group by 1
+group by country
