@@ -170,12 +170,6 @@ Please watch the [provided video tutorial](https://youtu.be/BnLkrA7a6gM&) to con
 
 ![Dashboard](./screenshots/DE_2024_Dashboard.png)
 
-<object data="./screenshots/DE_2024_Dashboard.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="./screenshots/DE_2024_Dashboard.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./screenshots/DE_2024_Dashboard.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-
 ## Contact
 Twitter: [@iamraphson](https://twitter.com/iamraphson)
 
